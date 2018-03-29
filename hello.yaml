@@ -1,0 +1,10 @@
+---
+- hosts: localhostengine-nginx
+  become: yes
+  gather_facts: False
+  tasks:
+
+  - name: Install EPEL-release
+    yum: name=epel-release state=present
+  - name: connection
+    command: ping 192.168.1.11 
