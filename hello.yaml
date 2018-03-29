@@ -9,14 +9,7 @@
   - name: connection
     command: ls -la 
        
-  - name: Log into DockerHub
-    docker_login:
-    ### {{doc_username}} ###
-      username: saikiran786
-      ### {{password-docker-hub}} ###
-      password: 9966786786
-      ### {{email_doc_hub}} ###
-      email: saikiran786786@gmail.com
+  
   
   - name: connection
     command: kube set image deployment/saikiran786/node
