@@ -13,3 +13,5 @@ node {
 
         app = docker.build("saikiran786/hellonode")
     }
+    
+}
