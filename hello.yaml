@@ -8,11 +8,7 @@
     yum: name=epel-release state=present
   - name: connection
     command: ls -la 
-    
-  - name: connection
-    command: kube set image deployment/saikiran786/node
-    
-    
+       
   - name: Log into DockerHub
     docker_login:
     ### {{doc_username}} ###
@@ -21,3 +17,6 @@
       password: 9966786786
       ### {{email_doc_hub}} ###
       email: saikiran786786@gmail.com
+  
+  - name: connection
+    command: kube set image deployment/saikiran786/node
